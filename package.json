@@ -1,0 +1,43 @@
+{
+  "name": "@3xpedia/object-inspector",
+  "version": "0.1.0",
+  "description": "Object inspector including prototype chains and property descriptors",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "del-cli ./dist",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "postbuild": "copy CHANGELOG.md LICENSE package.json README.md ./dist"
+  },
+  "author": {
+    "name": "Coclet Clément",
+    "url": "https://github.com/3xpedia"
+  },
+  "keywords": [
+    "object",
+    "inspector",
+    "prototype",
+    "property",
+    "descriptor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3xpedia/object-inspector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/3xpedia/object-inspector/issues"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "copy": "^0.3.2",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "glob": "^8.1.0",
+    "prettier": "^2.8.3",
+    "rollup": "^3.10.0"
+  }
+}
